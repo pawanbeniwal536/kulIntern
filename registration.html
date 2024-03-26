@@ -1,0 +1,199 @@
+<style>
+body{
+        margin: 0;
+        padding: 0;
+    }
+.heading{
+    font-size: 35px;
+    padding-top: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1px 0 15px 0;
+    position: sticky;
+    top: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 50px
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+/* Style the form container */
+main > div {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Center align the registration form heading */
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style form inputs and labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23000' d='M6 8L0 0h12L6 8z'/%3E%3C/svg%3E");
+    background-size: 12px 8px;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
+
+/* Style radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+footer{
+    background-color: #333;
+    width: 100%;
+    color :white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+<header>
+    <nav>
+        <ul>
+        <h1 class="heading">Great-Class</h1>
+    </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div>
+        <center>
+            <h3>Registration form</h3>
+        </center>
+        <label for="First name ">
+            <br> <br> First name : <input type=" text" name="First name" Id="first"><br>
+        </label>
+
+        <label for="Middle name ">
+            <br> <br> Middle name : <input type=" text" name="First name" Id="second"><br>
+        </label>
+
+        <label for="Last name ">
+            <br> <br> Last name : <input type=" text" name="First name" Id="Third"><br>
+        </label>
+
+        <br><br> Course : <label for="Coursed">
+        </label>
+
+        <select name="Courses" id="C.S Engineer">
+            <option value="select course">select course</option>
+            <option value="BCA">BCA</option>
+            <option value="B.tech">B.tech</option>
+            <option value="MCA">MCA</option>
+            <option value="M.tech">M.tech</option>
+        </select>
+
+        <label for="Gender">
+            <br>
+            Gender :
+        </label>
+        <label for="Male">
+             <input type="radio" name="first" Id="Gender">Male
+            <br> <input type="radio" name="second" Id="Female">Female
+            <br><input type="radio" name="Third" Id="Other">Other
+        </label>
+
+        <!-- Now use for Enter the mobile number  -->
+        <label for="mobile">
+            <br><br>
+            Mobile Number :
+        </label>
+        <input type="text" name="Country code" size="2" value="+91">
+        <!-- <input type="number" name="mobile number"><br> -->
+        <input type="text" name="mobile number" size="10"><br>
+        <br>
+        <label for="E=mail">
+            <br><br>email : <input type="email" name="E-mail" id="email 1">
+        </label>
+        <br>
+        <!-- Now use for the address of student  -->
+        <label for="Address">
+            Address :
+            <br>
+            <textarea name="Address" id="students" cols="30" rows="10" placeholder="Enter address here"></textarea>
+        </label>
+        <br>
+        <label for="button">
+            <br><br>
+            <center>
+            <input type="submit" name="form submit" id="form submit">
+        </center>
+        </label>
+        
+        
+    </div>
+    <footer>
+        &copy; 2024 Online Course Website. All rights reserved.
+    </footer>
+</main>
